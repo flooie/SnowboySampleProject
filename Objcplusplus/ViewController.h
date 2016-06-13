@@ -7,8 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "snowboy-detect.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : NSViewController
+#include <EZAudio/EZAudio.h>
+
+
+@interface ViewController : NSViewController <EZMicrophoneDelegate> {
+    snowboy::SnowboyDetect* snowboyDetector;
+}
+
+@property (nonatomic, strong) EZMicrophone *microphone;
 
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "snowboy-detect.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
+{
+//    snowboy::SnowboyDetect* _snowboyDetect;     // Detector.
+}
 
 @end
 
